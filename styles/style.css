@@ -4,12 +4,12 @@
     align-items: center;
     padding: 92px 50px;
     font-size: 18px;
-    
   }
   
   .header__menu {
     margin-right: auto;
   }
+
   .header__menu-list {
     display: flex;
     list-style: circle;
@@ -136,4 +136,132 @@
     text-transform: uppercase;
     background-color: transparent;
     cursor: pointer;
+}
+
+.lots {
+  margin: 180px 50px;
+}
+
+.lots__heading {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-left: 40px;
+  margin-bottom: 27px;
+  }
+
+.lots__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 25px;
+  list-style: none;
+}
+
+.lots__card-list-item {
+  flex-grow: 1;
+  width: 430px;
+  min-height: 450px;
+}
+
+.card-link {
+  display: block;
+  text-decoration: none;
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: -1;
+  height: 100%;
+  padding: 50px 40px;
+}
+
+.card__title {
+  color: #FFF;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 26.4px */
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.card__text {
+  color: #FFF;
+  font-size: 20px;
+  line-height: 120%; /* 24px */
+  font-weight: 400;
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+  background-size: cover;
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+  background-size: cover;
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+  background-size: cover;
+}
+
+.lots__look-more-link {
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 40px;
+  font-size: 20px;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid;
+}
+
+.about {
+  display: flex;
+  margin: 0 50px;
+  gap: 25px;
+}
+
+.about__column {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  flex-grow: 1;
+  min-width: 430px;
+}
+
+.about__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 240px;
+  height: 240px;
+  background-color:#000;
+  border-radius: 50%;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+}
+
+.about__title {
+  text-align: left;
+  color: #000;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-top: 100px;
+  padding-bottom: 75px;
+}
+
+.about__text {
+  text-align: left;
+  color: #000;
+  font-size: 20px;
 }
