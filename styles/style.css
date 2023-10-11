@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 92px 50px 96px 50px;
-  font-size: 18px;
 }
   
 .header__menu {
@@ -28,12 +27,13 @@
 .header__menu-item_active .header__menu-link {
   border-bottom: 0px;
   padding-bottom: 0;
+  pointer-events: none;
 }
 
 .header__logo {
   display: block;
   justify-self: center;
-  width: 148px;
+  width: 136px;
   height: 105px;
 }
 
@@ -60,6 +60,7 @@
   z-index: 0;
   padding: 50px;
   background-image:url(../images/cover.jpg);
+  background-position: center;
   background-size: cover;
 }
 
@@ -127,9 +128,11 @@
   border: 1px solid;
   padding: 12px 32px;
   color: #FFF;
+  font-family: Raleway;
   font-size: 22px;
   text-transform: uppercase;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .lots {
@@ -170,6 +173,7 @@
   justify-content: space-between;
   height: 100%;
   padding: 50px 40px;
+  background-size: cover;
 }
 
 .card__title {
@@ -189,17 +193,14 @@
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-size: cover;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-size: cover;
 }
 
 .lots__look-more-link {
@@ -218,10 +219,6 @@
 }
 
 .about__column {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  gap: 26px;
   min-width: 430px;
 }
 
@@ -232,6 +229,7 @@
   align-self: center;
   width: 240px;
   height: 240px;
+  margin-left: 95px;
   border-radius: 50%;
   background-color:#000;
 }
@@ -243,7 +241,7 @@
 
 .about__title {
   padding-top: 100px;
-  padding-bottom: 75px;
+  padding-bottom: 100px;
   color: #000;
   font-size: 40px;
   text-align: left;
@@ -251,6 +249,9 @@
 }
 
 .about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
   color: #000;
   font-size: 20px;
   text-align: left;
@@ -280,6 +281,7 @@
 .footer__menu-item_active .footer__menu-link {
   border-bottom: 0px;
   padding-bottom: 0;
+  pointer-events: none;
 }
 
 .footer__social-list {
