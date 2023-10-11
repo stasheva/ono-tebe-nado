@@ -12,7 +12,8 @@
 .header__menu-list {
   display: flex;
   gap: 32px;
-  list-style: circle;   
+  list-style: circle;
+  white-space: nowrap;   
 }
 
 .header__menu-link {
